@@ -12,11 +12,7 @@ public class TeamQuiz {
 	private String[] providers;
 	private String[] pictures;
 
-	public TeamQuiz(String inputFileName) {
-		this.inputFileName = inputFileName;
-	}
-
-	public void readInput() throws IOException {
+	public void readInput(String inputFileName) throws IOException {
 		BufferedReader reader = new BufferedReader(new FileReader(inputFileName));
 		String line = reader.readLine();
 		while (line != null) {
@@ -101,9 +97,10 @@ public class TeamQuiz {
 	}
 
 	public static void main(String[] args) {
-		TeamQuiz quiz = new TeamQuiz("teamquiz.input");
+		final String inputFileName = "teamquiz.input";
+		final TeamQuiz quiz = new TeamQuiz();
 		try {
-			quiz.readInput();
+			quiz.readInput(inputFileName);
 		} catch (IOException e) {
 			System.err.println("Error whe reading input file: " + e.getMessage());
 		}
