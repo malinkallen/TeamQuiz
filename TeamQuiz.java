@@ -101,9 +101,9 @@ public class TeamQuiz {
 		final TeamQuiz quiz = new TeamQuiz();
 		try {
 			quiz.readInput(inputFileName);
+			quiz.printAlternatives();
 		} catch (IOException e) {
 			System.err.println("Error when reading input file: " + e.getMessage());
 		}
-		quiz.printAlternatives();
 	}
 }
