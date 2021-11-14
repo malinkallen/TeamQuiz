@@ -24,7 +24,8 @@ public class TeamQuiz {
 			if (parts.length != 2) {
 				System.err.println("Each input line should contain a parameter and its value, separated with '='");
 			} else {
-				switch (parts[0]) {
+				String parameter = parts[0].trim();
+				switch (parameter) {
 					case "alternatives":
 						allAlternatives = parts[1].split(",");
 						break;
@@ -35,7 +36,7 @@ public class TeamQuiz {
 						pictures = parts[1].split(",");
 						break;
 					default:
-						System.err.println("Skipping unknown input parameter " + parts[0]);
+						System.err.println("Skipping unknown input parameter " + parameter);
 						break;
 				}
 			}
