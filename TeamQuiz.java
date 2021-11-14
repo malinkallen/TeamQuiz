@@ -102,7 +102,7 @@ public class TeamQuiz {
 		try {
 			quiz.readInput(inputFileName);
 		} catch (IOException e) {
-			System.err.println("Error whe reading input file: " + e.getMessage());
+			System.err.println("Error when reading input file: " + e.getMessage());
 		}
 		quiz.printAlternatives();
 	}
