@@ -16,7 +16,8 @@ keyword should be followed by a `=`, and
 	`picture1`, `picture2` and so on, or something more descriptive) on the line
 	starting with `pictures`
     * a comma separated list of persons to use as alternatives on the line
-	starting with `alternatives`
+	starting with `alternatives`. This may be the same list as on the
+	`providers` line, or you may add some people to trick the participants.
 5. Run the program: `java TeamQuiz`
 
 For an example of what `teamquiz.intput` might look like, see the current
