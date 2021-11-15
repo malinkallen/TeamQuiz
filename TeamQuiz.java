@@ -87,8 +87,8 @@ public class TeamQuiz {
 	private void printAlternatives(List<String> questions, List<List<String>> alternatives) {
 		final int numQuestions = questions.size();
 		for (int i=0; i<numQuestions; i++) {
-			System.out.println("Picture: " + questions.get(i));
-			System.out.println("Alternatives:");
+			System.out.println(" " + i + ". Picture: " + questions.get(i));
+			System.out.println(" Alternatives:");
 			for (int j=0; j<NUM_ALTERNATIVES; j++) {
 				System.out.println("\t" + alternatives.get(i).get(j));
 			}
